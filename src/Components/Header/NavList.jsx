@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import {FiShoppingCart} from 'react-icons/fi';
 import {CgMenu,CgClose} from 'react-icons/cg'
 import { useCartContext } from '../../Context/CartContext';
+import { Button } from '../../Button/Button';
 const NavList = () => {
 
     const [menuIcon,setMenuIcon]=useState();
@@ -42,6 +43,14 @@ const NavList = () => {
               className="navbar-link "
               onClick={() => setMenuIcon(false)}>
               Contact
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+            to="/authenticate">
+            <Button>
+              Login/Signup
+            </Button>
             </NavLink>
           </li>
           <li>

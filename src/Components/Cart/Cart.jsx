@@ -4,10 +4,10 @@ import CartItem from "./CartItem";
 import { NavLink } from "react-router-dom";
 import { Button } from "../../Button/Button";
 import FormatPrice from "../../Utilities/FormatPrice";
+
 const Cart = () => {
   const { cart, clearCart, total_price, shipping_fee } = useCartContext();
-  // console.log("🚀 ~ file: Cart.js ~ line 6 ~ Cart ~ cart", cart);
-
+  
   if (cart.length === 0) {
     return (
       <EmptyDiv>
@@ -17,6 +17,7 @@ const Cart = () => {
   }
 
   return (
+   
     <Wrapper>
       <div className="container">
         <div className="cart_heading grid grid-five-column">

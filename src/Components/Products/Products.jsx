@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import FilterSection from './FilterSection';
 import SortedProducts from './SortedProducts';
 import ProductList from './ProductList';
-import FilterProvider from '../../Context/FilterContext';
+
 const Products = () => {
  
   return (

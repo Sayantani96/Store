@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Button } from '../../Button/Button';
 import { FaDiscord, FaInstagram, FaYoutube } from "react-icons/fa";
 
+
 const Footer = () => {
   return (
     <>
@@ -16,7 +17,7 @@ const Footer = () => {
 
             <div>
               <Button className="btn hireme-btn">
-                Get Started
+                Connect To Us
               </Button>
             </div>
           </div>

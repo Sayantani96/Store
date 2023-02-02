@@ -17,7 +17,7 @@ const HeroSection = ({heroData}) => {
                     <p>
                         {heroData}
                     </p>
-                <NavLink>
+                <NavLink to="/products">
                     <Button>Shop Now</Button>
                 </NavLink>
               </div>

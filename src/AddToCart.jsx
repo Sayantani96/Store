@@ -45,9 +45,9 @@ const tickHandler=(currColor)=>{
                 }
             </p>
             <CartAmountToggle amount={amount} setDecrease={setDecrease} setIncrease={setIncrease}/>
-            <NavLink to="/cart" onClick={()=>addToCart(id,colors,amount,product)}>
-              <Button className="btn">Add To Cart</Button>
-            </NavLink>
+            {/* <NavLink to="/cart" > */}
+              <Button className="btn" onClick={()=>addToCart(id,colors,amount,product)}>Add To Cart</Button>
+            {/* </NavLink> */}
         </div>
     </Wrapper>
     

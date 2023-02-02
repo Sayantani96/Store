@@ -12,6 +12,8 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from './GlobalStyle';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
+import Authenticate from './Components/Authenticate/Authenticate';
+import ProtectedRoute from './ProtectedRoute/ProtectedRoute';
 function App() {
 
   const theme={
@@ -42,7 +44,12 @@ function App() {
           <Route path='/products' element={<Products/>}/>
           <Route path='/contacts' element={<Contacts/>}/>
           <Route path='/product/:id' element={<SingleProduct/>}/>
-          <Route path='/cart' element={<Cart/>}/>
+          <Route path='/authenticate' element={<Authenticate/>}/>
+          <Route path='/cart' element={
+            <ProtectedRoute>
+                <Cart/>
+            </ProtectedRoute>
+          }/>
           <Route path='/*' element={<ErrorPage/>}/>
         </Routes>
       </BrowserRouter>
